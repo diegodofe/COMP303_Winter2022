@@ -66,7 +66,7 @@ COMP 206 and COMP 250. Please also perform the [self assessment](https://github.
 
 
  
-- Due to the remote teaching complication, I won't require you to attend the live lectures even though it is recommended. If you are not able to attend the live lectures, please make sure to follow the recordings afterward and complete the quizzes that constitute your `Survey and Quiz` grade. 
+- Due to the remote teaching complication, I won't require you to attend the live lectures even though it is highly recommended. If you are not able to attend the live lectures, please make sure to follow the recordings afterward and complete the quizzes that constitute your `Survey and Quiz` grade. 
 - Our TA will try their best to support your learning. But considering this is a big class – many of you will have similar questions or concerns and many of you have will answers to other people’s questions, we encourage you to discuss your questions about the lectures and exercises online;
 - Every module of the lecture will come with [exercises provided by the textbook](https://github.com/prmr/DesignBook). Those are for your practice and will not be graded. Instead, your practical skills will be evaluated through a series of design assignments and lab tests throughout the semester. 
 - We plan to have four `assignments` throughout the semester. The first three assignments will map to different modules of the textbook, and the last one will be a final integration activity covering the entire course. 
