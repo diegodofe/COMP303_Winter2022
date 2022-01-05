@@ -8,7 +8,7 @@
 | Live Lecture Date and Time    | MW 11:35 pm - 12:55 pm (remote through Zoom) | 
 | Lecture Link and Recordings | myCourses |
 | Office Hours | TBD |
-| Q&A and Discussion Forum | Gitlab Issues |
+| Q&A and Discussion Forum | Ed discussion (link through myCourses, will be add soon) |
 
 ## Teaching Assistant Team
 
