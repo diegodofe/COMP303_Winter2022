@@ -90,7 +90,7 @@ COMP 206 and COMP 250. Please also perform the [self assessment](https://github.
 |10  |  7 Feb | Design for Robustness - 2 | EJ: Item 69 - 72 | | | |
 |11	|  9 Feb | Unit Testing - 1 | SD: Chapter 5  | | |
 |12	|  14 Feb | Unit Testing - 2| SD: Chapter 5 | [Exercise 1-11 in SD: Chapter 5](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter5.md) | | |
-|13	|  26 Feb | Content Review (by TAs)| | | | |
+|13	|  16 Feb | Content Review (by TAs)| | | | |
 |14	|  21 Feb | Composition - 1 | SD: Chapter 6 | | | |
 |15	|  23 Feb | Composition - 2 | SD: Chapter 6 | [Exercise 1-5 in SD: Chapter 6](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter6.md)| | |
 |**	|  28 Feb | READING WEEK | | | | |
