@@ -84,7 +84,7 @@ COMP 206 and COMP 250. Please also perform the [self assessment](https://github.
 |4	|  17 Jan | Types and Polymorphism - 1 | SD: Chapter 3 | [Exercise 1-2 in SD: Chapter 3](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter3.md) | | |
 |5	|  19 Jan | Types and Polymorphism - 2 | EJ: Item 14 | [Exercise 3-6 in SD: Chapter 3](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter3.md) | | |
 |6	|  24 Jan | Types and Polymorphism - 3 | | [Exercise 7-12 in SD: Chapter 3](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter3.md)| | |
-|7	|  26 Jan | Object State - 1 | SD: Chapter 3, EJ: Item 10, 11 | [Exercise 1-5 in SD: Chapter 4](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter4.md) | | | |
+|7	|  26 Jan | Object State - 1 | SD: Chapter 4, EJ: Item 10, 11 | [Exercise 1-5 in SD: Chapter 4](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter4.md) | | | |
 |8	|  31 Jan | Object State - 2 | EJ: Item 1, 3 | [Exercise 6-11 in SD: Chapter 4](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter4.md) | | |
 |9	|  2 Feb | Design for Robustness - 1 | PP: Topic 23, 24, 25| | | |
 |10  |  7 Feb | Design for Robustness - 2 | EJ: Item 69 - 72 | | | |
