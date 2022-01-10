@@ -7,20 +7,39 @@
 | Instructor    | [Jin Guo](http://jguo-web.com/index.html)|
 | Live Lecture Date and Time    | MW 11:35 pm - 12:55 pm (remote through Zoom) | 
 | Lecture Link and Recordings | myCourses |
-| Office Hours | TBD |
-| Q&A and Discussion Forum | Ed discussion (link through myCourses, will be add soon) |
+| Q&A and Discussion Forum | Ed discussion (access through myCourses) |
 
 ## Teaching Assistant Team
 
 | Name | Email Address |
 | :---: | :---: |
-
+| Xinran Xiong | On Ed discussion Forum |
+| Linhui Huang | On Ed discussion Forum |
+| Zhen Hao (Anthony) Ong | On Ed discussion Forum |
+| Guanhua (Peter) Rong | On Ed discussion Forum |
+| Xiding (Shawn) Hu | On Ed discussion Forum |
+| Jiahao Chen | On Ed discussion Forum |
+| Beyza Yildirim | On Ed discussion Forum |
+| Beatrice Duval | On Ed discussion Forum |
+| Yechuan (Violet) Shi | On Ed discussion Forum |
+| Deeksha Arya | On Ed discussion Forum |
+| Avinash Bhat | On Ed discussion Forum |
 
 
 ## TA Office Hours
 | Time | TA |
-| --- |---|
-
+| :---: | :---: |
+| Mon 10 - 11am | Deeksha Arya |
+| Mon 2:30 - 3:30pm | Yechuan (Violet) Shi |
+| Tue 10 - 11am | Xiding (Shawn) Hu |
+| Tue 11am - 12pm | Guanhua (Peter) Rong |
+| Tue 3:30 - 4:30pm | Beyza Yildirim |
+| Wed 10 - 11am | Xinran Xiong |
+| Wed 3:30 - 4:30pm | Beatrice Duval |
+| Thu 9 - 10am | Avinash Bhat |
+| Thu 3:30 - 4:30pm | Linhui Huang | 
+| Fri 9 - 10am | Jiahao Chen |
+| Fri 11am - 12pm | Zhen Hao (Anthony) Ong |
 
 ## Description
 This course provides an in-depth introduction to the discipline of software design for building realistic and high-quality software applications. It will focus on object-oriented programming techniques, and cover topics related to managing software complexity and verifying that they work as expected. It will use Java for all the code examples and assignments. However, the considerations during the design process apply in all languages for practical software development.
