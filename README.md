@@ -20,7 +20,7 @@
 | Xiding (Shawn) Hu | On Ed discussion Forum |
 | Jiahao Chen | On Ed discussion Forum |
 | Beyza Yildirim | On Ed discussion Forum |
-| Beatrice Duval | On Ed discussion Forum |
+| Béatrice Duval | On Ed discussion Forum |
 | Yechuan (Violet) Shi | On Ed discussion Forum |
 | Deeksha Arya | On Ed discussion Forum |
 | Avinash Bhat | On Ed discussion Forum |
@@ -35,7 +35,7 @@
 | Tue 11am - 12pm | Guanhua (Peter) Rong |
 | Tue 3:30 - 4:30pm | Beyza Yildirim |
 | Wed 10 - 11am | Xinran Xiong |
-| Wed 3:30 - 4:30pm | Beatrice Duval |
+| Wed 3:30 - 4:30pm | Béatrice Duval |
 | Thu 9 - 10am | Avinash Bhat |
 | Thu 3:30 - 4:30pm | Linhui Huang | 
 | Fri 9 - 10am | Jiahao Chen |
