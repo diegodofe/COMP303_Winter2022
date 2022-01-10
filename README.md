@@ -7,20 +7,39 @@
 | Instructor    | [Jin Guo](http://jguo-web.com/index.html)|
 | Live Lecture Date and Time    | MW 11:35 pm - 12:55 pm (remote through Zoom) | 
 | Lecture Link and Recordings | myCourses |
-| Office Hours | TBD |
-| Q&A and Discussion Forum | Gitlab Issues |
+| Q&A and Discussion Forum | Ed discussion (access through myCourses) |
 
 ## Teaching Assistant Team
 
 | Name | Email Address |
 | :---: | :---: |
-
+| Xinran Xiong | On Ed discussion Forum |
+| Linhui Huang | On Ed discussion Forum |
+| Zhen Hao (Anthony) Ong | On Ed discussion Forum |
+| Guanhua (Peter) Rong | On Ed discussion Forum |
+| Xiding (Shawn) Hu | On Ed discussion Forum |
+| Jiahao Chen | On Ed discussion Forum |
+| Beyza Yildirim | On Ed discussion Forum |
+| Beatrice Duval | On Ed discussion Forum |
+| Yechuan (Violet) Shi | On Ed discussion Forum |
+| Deeksha Arya | On Ed discussion Forum |
+| Avinash Bhat | On Ed discussion Forum |
 
 
 ## TA Office Hours
 | Time | TA |
-| --- |---|
-
+| :---: | :---: |
+| Mon 10 - 11am | Deeksha Arya |
+| Mon 2:30 - 3:30pm | Yechuan (Violet) Shi |
+| Tue 10 - 11am | Xiding (Shawn) Hu |
+| Tue 11am - 12pm | Guanhua (Peter) Rong |
+| Tue 3:30 - 4:30pm | Beyza Yildirim |
+| Wed 10 - 11am | Xinran Xiong |
+| Wed 3:30 - 4:30pm | Beatrice Duval |
+| Thu 9 - 10am | Avinash Bhat |
+| Thu 3:30 - 4:30pm | Linhui Huang | 
+| Fri 9 - 10am | Jiahao Chen |
+| Fri 11am - 12pm | Zhen Hao (Anthony) Ong |
 
 ## Description
 This course provides an in-depth introduction to the discipline of software design for building realistic and high-quality software applications. It will focus on object-oriented programming techniques, and cover topics related to managing software complexity and verifying that they work as expected. It will use Java for all the code examples and assignments. However, the considerations during the design process apply in all languages for practical software development.
@@ -39,6 +58,8 @@ After completing this course successful students should be able to:
 - **Required Textbook**: 
   - [Introduction to Software Design with Java (referred to as SD in the schedule)](https://link.springer.com/book/10.1007/978-3-030-24094-3). The electronic version of this book is **free** for McGill users with library access. For those who optionally want a print version, the [Paragraph Bookstore](http://paragraphbooks.com/) will stock a limited number of copies;
   - [Companion Website](https://github.com/prmr/DesignBook) for source code, exercises, and solutions.
+  - [Casdoc Tool](https://swevo.cs.mcgill.ca/). Chapter and solution code from the textbook companion website with extra in-line annotations of examples and explanations.
+  - 
 - **Other Recommended References:** 
   - [The Pragmatic Programmer (referred to as PP)](https://www.oreilly.com/library/view/the-pragmatic-programmer/9780135956977/), by David Thomas, Andrew Hunt, Addison-Wesley Professional;
   - [Effective Java (referred to as EJ)](https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/), by Joshua Bloch, Addison-Wesley Professional.
@@ -84,13 +105,13 @@ COMP 206 and COMP 250. Please also perform the [self assessment](https://github.
 |4	|  17 Jan | Types and Polymorphism - 1 | SD: Chapter 3 | [Exercise 1-2 in SD: Chapter 3](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter3.md) | | |
 |5	|  19 Jan | Types and Polymorphism - 2 | EJ: Item 14 | [Exercise 3-6 in SD: Chapter 3](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter3.md) | | |
 |6	|  24 Jan | Types and Polymorphism - 3 | | [Exercise 7-12 in SD: Chapter 3](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter3.md)| | |
-|7	|  26 Jan | Object State - 1 | SD: Chapter 3, EJ: Item 10, 11 | [Exercise 1-5 in SD: Chapter 4](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter4.md) | | | |
+|7	|  26 Jan | Object State - 1 | SD: Chapter 4, EJ: Item 10, 11 | [Exercise 1-5 in SD: Chapter 4](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter4.md) | | | |
 |8	|  31 Jan | Object State - 2 | EJ: Item 1, 3 | [Exercise 6-11 in SD: Chapter 4](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter4.md) | | |
 |9	|  2 Feb | Design for Robustness - 1 | PP: Topic 23, 24, 25| | | |
 |10  |  7 Feb | Design for Robustness - 2 | EJ: Item 69 - 72 | | | |
 |11	|  9 Feb | Unit Testing - 1 | SD: Chapter 5  | | |
 |12	|  14 Feb | Unit Testing - 2| SD: Chapter 5 | [Exercise 1-11 in SD: Chapter 5](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter5.md) | | |
-|13	|  26 Feb | Content Review (by TAs)| | | | |
+|13	|  16 Feb | Content Review (by TAs)| | | | |
 |14	|  21 Feb | Composition - 1 | SD: Chapter 6 | | | |
 |15	|  23 Feb | Composition - 2 | SD: Chapter 6 | [Exercise 1-5 in SD: Chapter 6](https://github.com/prmr/DesignBook/blob/master/exercises/e-chapter6.md)| | |
 |**	|  28 Feb | READING WEEK | | | | |
@@ -108,5 +129,5 @@ COMP 206 and COMP 250. Please also perform the [self assessment](https://github.
 |26 |  11 Apr | Software Engineering Ethics and Wrap-up | [ACM/IEEE-CS Software Engineering Code](https://ethics.acm.org/code-of-ethics/software-engineering-code/) <br> [Ethics Is a Software Design Concern](https://ieeexplore.ieee.org/abstract/document/8693077) | | | |
 
 ## Survey and Quiz links
-
+[Background Survey](https://forms.gle/34v9jrXtnwkpPZA67) (Deadline Jan 20th)
 
