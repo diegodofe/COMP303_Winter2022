@@ -65,7 +65,7 @@ After completing this course successful students should be able to:
   - [Effective Java (referred to as EJ)](https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/), by Joshua Bloch, Addison-Wesley Professional.
 
 - **Sample Projects:** 
-  - [Inclass demos](TBD);
+  - [Inclass demos](https://github.com/jin-guo/comp303_winter2022_codedemos);
   - [Minesweeper](https://github.com/prmr/Minesweeper);
   - [Solitaire](https://github.com/prmr/Solitaire).
 
@@ -82,7 +82,7 @@ COMP 206 and COMP 250. Please also perform the [self assessment](https://github.
 |  Assessment Method | Weight |
 | :---: | :---: |
 |  Survey and Quiz | 10% |
-|  Assignments | 60% -- 10(A1)+10(A2)+15(A3)+25(A4) |
+|  Assignments | 60% -- 10(A1)+10(A2)+10(A3)+(10)A4+20(A5) |
 |  Lab Test | 30% -- 10(L1)+10(L2)+10(L3) |
 
 
