@@ -31,9 +31,9 @@
 | :---: | :---: |
 | Mon 10 - 11am | Deeksha Arya |
 | Mon 2:30 - 3:30pm | Yechuan (Violet) Shi |
+| Tue 9 - 10am | Beyza Yildirim |
 | Tue 10 - 11am | Xiding (Shawn) Hu |
 | Tue 11am - 12pm | Guanhua (Peter) Rong |
-| Tue 3:30 - 4:30pm | Beyza Yildirim |
 | Wed 10 - 11am | Xinran Xiong |
 | Wed 3:30 - 4:30pm | Béatrice Duval |
 | Thu 9 - 10am | Avinash Bhat |
