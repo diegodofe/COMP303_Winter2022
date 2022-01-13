@@ -9,25 +9,9 @@
 | Lecture Link and Recordings | myCourses |
 | Q&A and Discussion Forum | Ed discussion (access through myCourses) |
 
-## Teaching Assistant Team
 
-| Name | Email Address |
-| :---: | :---: |
-| Xinran Xiong | On Ed discussion Forum |
-| Linhui Huang | On Ed discussion Forum |
-| Zhen Hao (Anthony) Ong | On Ed discussion Forum |
-| Guanhua (Peter) Rong | On Ed discussion Forum |
-| Xiding (Shawn) Hu | On Ed discussion Forum |
-| Jiahao Chen | On Ed discussion Forum |
-| Beyza Yildirim | On Ed discussion Forum |
-| Béatrice Duval | On Ed discussion Forum |
-| Yechuan (Violet) Shi | On Ed discussion Forum |
-| Deeksha Arya | On Ed discussion Forum |
-| Avinash Bhat | On Ed discussion Forum |
-
-
-## TA Office Hours
-| Time | TA |
+## TA Office Hours (Zoom link on MyCourses. Booking link [here](https://appt.link/w22-com303/15-minute-meeting))
+| Time | TA | 
 | :---: | :---: |
 | Mon 10 - 11am | Deeksha Arya |
 | Mon 2:30 - 3:30pm | Yechuan (Violet) Shi |
