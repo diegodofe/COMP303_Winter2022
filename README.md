@@ -77,7 +77,7 @@ COMP 206 and COMP 250. Please also perform the [self assessment](https://github.
 - We plan to have four `assignments` throughout the semester. The first three assignments will map to different modules of the textbook, and the last one will be a final integration activity covering the entire course. 
 - The `lab tests` complement the assignments and will be in person. During each lab test, you will be asked to complete a series of tasks given by our TAs. You are responsible to book the slot of each lab test in advance with the TAs. 
 - Any form of plagiarism, cheating is strictly banned throughout the semester. Integrity is crucial to this course and your future career. Any violation against academic integrity will be taken very seriously. For more information, please refer [here](https://www.mcgill.ca/students/srr/academicrights/integrity).
-- **Late policy for assignments: 20% penalty each day with a maximum of two days. No submission is accepted after that. Most assignments are built on previous ones, so making the deadline is critical for carrying on the process of this course.**
+- **Late policy for assignments: a 20% penalty each day with a maximum of two days. No submission is accepted after that. Most assignments are built on previous ones, so making the deadline is critical for carrying on the progress of this course.**
 
 ## Schedule (Tentative)
 *Subject to minor adjustments*
