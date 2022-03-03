@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Represents a sequence of playables to play in FIFO order.
@@ -24,6 +23,16 @@ public class PlayList implements Playable {
     }
 
     /**
+     * Getter method to iterate over playables. Since playables are immutable,
+     * method returns a shallow copy.
+     *
+     * @return ArrayList of playables
+     */
+    public List<Playable> getaList() {
+        return new ArrayList<>(aList);
+    }
+
+    /**
      * Adds a playable at the end of this playlist.
      *
      * @param pPlayable the content to add to the list
@@ -37,7 +46,9 @@ public class PlayList implements Playable {
 
     @Override
     public void play() {
-
+        for (Playable playable : aList) {
+            playable.play();
+        }
     }
 
     @Override
@@ -64,6 +75,4 @@ public class PlayList implements Playable {
             return false;
         return true;
     }
-       
-
 }

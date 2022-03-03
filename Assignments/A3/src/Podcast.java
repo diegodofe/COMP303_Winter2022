@@ -1,67 +1,120 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
- * Represents a single Podcast, with at least a name and a host. Each Podcast aggregates episodes.
+ * Represents a single Podcast, with at least a name and a host. Each Podcast
+ * aggregates episodes.
  */
-public class Podcast{
+public class Podcast {
 
-    private static final List<Podcast> allPodcasts = new ArrayList<>();
+    // Cache of current flyweight Podcasts.
+    private static final List<Podcast> podcastCache = new ArrayList<>();
+
     private final String aName;
     private final String aHost;
-
-    private List<Episode> aEpisodes = new ArrayList<>();
-
-    public static Podcast getPodcast(String aName, String aHost){
-
-        Podcast requestedPodcast = new Podcast(aName, aHost);
-
-        if (allPodcasts.isEmpty()){
-            allPodcasts.add(requestedPodcast);
-            return requestedPodcast;
-        }
-
-        for (int i = 0; i<allPodcasts.size();i++){
-            Podcast tempSong = allPodcasts.get(i);
-            if (tempSong.equals(requestedPodcast)){
-                return tempSong;
-            }
-        }
-
-        allPodcasts.add(requestedPodcast);
-        
-        return requestedPodcast;
-    }
+    private final List<Episode> aEpisodes = new ArrayList<>();
 
     /**
-     * Creates a Podcast.
-     * Add your constructor here
+     * Creates a Podcast. Private constructor that is only called from getPodcast()
+     * method.
+     *
+     * @pre pName != null && pHost!=null
+     * @throws IllegalArgumentException
      */
     private Podcast(String pName, String pHost) {
+
+        assert (pName != null) && (pHost != null);
+
         aName = pName.toLowerCase();
         aHost = pHost.toLowerCase();
     }
 
+    public String getName() {
+        return aName;
+    }
+
+    public String getHost() {
+        return aHost;
+    }
+
     /**
-     * Add one episode to the podcast
-     * @param pEpisode to be put into the podcast
-     * @pre
+     * Returns a song based on the current cache of flyweight podcast
+     * 
+     * @param pTitle  title of the episode
+     * @param pArtist artist name of the song
+     * @return Podcast object
      */
-    protected void addEpisode(Episode pEpisode) {
-        if(!aEpisodes.contains(pEpisode)) {
-            aEpisodes.add(pEpisode);
+    public static Podcast getPodcast(String aName, String aHost) {
+
+        // Temp Podcast object to compare Podcast objects in the cache.
+        Podcast requestedPodcast = new Podcast(aName, aHost);
+
+        if (podcastCache.isEmpty()) {
+            podcastCache.add(requestedPodcast);
+            return requestedPodcast;
         }
+
+        // Check the Podcast cache to see if the song already exists.
+        for (int i = 0; i < podcastCache.size(); i++) {
+            Podcast tempSong = podcastCache.get(i);
+
+            // If the Podcast already exists return it to the Client.
+            if (tempSong.equals(requestedPodcast)) {
+                return tempSong;
+            }
+        }
+
+        // Podcast DNE, therefore add it to cache and return it.
+        podcastCache.add(requestedPodcast);
+
+        return requestedPodcast;
+    }
+
+    /**
+     * Determines number of episodes in this Podcast
+     * 
+     * @returns size of aEpisode
+     */
+    public int getNumEpisodes() {
+        return aEpisodes.size();
     }
 
     /**
      * retrieve one episode from the podcast
+     * 
      * @param pIndex
-     *
+     * 
+     * @pre pIndex >= 0 && pIndex < aEpisodes.size() && getNumEpisodes() > 0
+     * @throws IllegalArgumentException
+     * @returns Episode object
      */
-
     public Episode getEpisode(int pIndex) {
-       //
-        return null;
+
+        assert (!aEpisodes.isEmpty()) && (pIndex >= 0) && (pIndex < aEpisodes.size());
+
+        return aEpisodes.get(pIndex);
+
+    }
+
+    /**
+     * Prints current list of episodes in this Podcast.
+     */
+    public void episodeList() {
+        for (int i = 0; i < aEpisodes.size(); i++) {
+            System.out.println(
+                    i + ": " + " [" + aEpisodes.get(i).getaEpisodeNumber() + "]: " + aEpisodes.get(i).getaTitle());
+        }
+    }
+
+    /**
+     * Add one episode to the podcast
+     * 
+     * @param pEpisode to be put into the podcast
+     * @pre
+     */
+    protected void addEpisode(Episode pEpisode) {
+        if (!aEpisodes.contains(pEpisode)) {
+            aEpisodes.add(pEpisode);
+        }
     }
 
     @Override
@@ -93,14 +146,6 @@ public class Podcast{
         } else if (!aName.equals(other.aName))
             return false;
         return true;
-    }
-
-    public String getName() {
-        return aName;
-    }
-
-    public String getHost() {
-        return aHost;
     }
 
 }

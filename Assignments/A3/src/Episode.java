@@ -1,14 +1,20 @@
+import java.util.*;
+
 /**
  * Represents a single episode, with at least a title, and an episode number.
  */
 public class Episode implements Playable {
+
+    // Cache of current flyweight Episodes.
+    private static final List<Episode> episodeCache = new ArrayList<>();
 
     private final Podcast aPodcast;
     private final String aTitle;
     private final int aEpisodeNumber;
 
     /**
-     * Creates an episode
+     * Creates an episode. Private constructor that is only called from getEpisode()
+     * method.
      *
      * @param pPodcast       Podcast that this episode is a part of
      * 
@@ -19,10 +25,10 @@ public class Episode implements Playable {
      * @pre pPodcast != null && pTitle!=null
      * @throws IllegalArgumentException
      */
-    Episode(Podcast pPodcast, String pTitle, int pEpisodeNumber) {
+    private Episode(Podcast pPodcast, String pTitle, int pEpisodeNumber) {
         assert (pPodcast != null) && (pTitle != null);
         aPodcast = pPodcast;
-        aTitle = pTitle;
+        aTitle = pTitle.toLowerCase();
         aEpisodeNumber = pEpisodeNumber;
         aPodcast.addEpisode(this);
     }
@@ -37,6 +43,43 @@ public class Episode implements Playable {
 
     public int getaEpisodeNumber() {
         return aEpisodeNumber;
+    }
+
+    /**
+     * Returns a Episode based on the current cache of flyweight Episodes
+     * 
+     * @param pPodcast       Podcast that this episode is a part of
+     * 
+     * @param pTitle         title of the episode
+     * 
+     * @param pEpisodeNumber the episode number that identifies the episode
+     * 
+     * @return Episode object
+     */
+    public static Episode getEpisode(Podcast pPodcast, String pTitle, int pEpisodeNumber) {
+
+        // Temp Episode object to compare Episode objects in the cache.
+        Episode requestedEpisode = new Episode(pPodcast, pTitle, pEpisodeNumber);
+
+        if (episodeCache.isEmpty()) {
+            episodeCache.add(requestedEpisode);
+            return requestedEpisode;
+        }
+
+        // Check the Episode cache to see if the Episode already exists.
+        for (int i = 0; i < episodeCache.size(); i++) {
+            Episode tempEpisode = episodeCache.get(i);
+
+            // If the Episode already exists return it to the Client.
+            if (tempEpisode.equals(requestedEpisode)) {
+                return tempEpisode;
+            }
+        }
+
+        // Episode DNE, therefore add it to cache and return it.
+        episodeCache.add(requestedEpisode);
+
+        return requestedEpisode;
     }
 
     @Override

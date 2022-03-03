@@ -5,38 +5,69 @@ import java.util.*;
  */
 public class Song implements Playable {
 
-    private static final List<Song> allSongs = new ArrayList<>();
+    // Cache of current flyweight Songs.
+    private static final List<Song> songsCache = new ArrayList<>();
+
     private final String aTitle;
     private final String aArtist;
 
-    public static Song getSong(String pTitle, String pArtist){
+    /**
+     * Creates a song. Private constructor that is only called from getSong()
+     * method.
+     *
+     * @param pTitle  title of the song
+     * @param pArtist artist name of the song
+     * 
+     * @pre pTitle != null && pArtist!=null
+     * @throws IllegalArgumentException
+     */
+    private Song(String pTitle, String pArtist) {
 
+        assert (pTitle != null) && (pArtist != null);
+
+        aTitle = pTitle.toLowerCase();
+        aArtist = pArtist.toLowerCase();
+    }
+
+    public String getTitle() {
+        return aTitle;
+    }
+
+    public String getArtist() {
+        return aArtist;
+    }
+
+    /**
+     * Returns a song based on the current cache of flyweight songs
+     * 
+     * @param pTitle  title of the episode
+     * @param pArtist artist name of the song
+     * @return Song object
+     */
+    public static Song getSong(String pTitle, String pArtist) {
+
+        // Temp Song object to compare Song objects in the cache.
         Song requestedSong = new Song(pTitle, pArtist);
 
-        if (allSongs.isEmpty()){
-            allSongs.add(requestedSong);
+        if (songsCache.isEmpty()) {
+            songsCache.add(requestedSong);
             return requestedSong;
         }
 
-        for (int i = 0; i<allSongs.size();i++){
-            Song tempSong = allSongs.get(i);
-            if (tempSong.equals(requestedSong)){
+        // Check the Song cache to see if the song already exists.
+        for (int i = 0; i < songsCache.size(); i++) {
+            Song tempSong = songsCache.get(i);
+
+            // If the Song already exists return it to the Client.
+            if (tempSong.equals(requestedSong)) {
                 return tempSong;
             }
         }
 
-        allSongs.add(requestedSong);
-        
-        return requestedSong;
-    }
+        // Song DNE, therefore add it to cache and return it.
+        songsCache.add(requestedSong);
 
-    /**
-     * Creates a Song.
-     * Add your constructor here
-     */
-    private Song(String pTitle, String pArtist) {
-        aTitle = pTitle.toLowerCase();
-        aArtist = pArtist.toLowerCase();
+        return requestedSong;
     }
 
     public void play() {
@@ -74,13 +105,5 @@ public class Song implements Playable {
         } else if (!aTitle.equals(other.aTitle))
             return false;
         return true;
-    }
-
-    public String getTitle() {
-        return aTitle;
-    }
-
-    public String getArtist() {
-        return aArtist;
     }
 }

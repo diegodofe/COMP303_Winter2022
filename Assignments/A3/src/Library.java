@@ -6,18 +6,35 @@ import java.util.*;
  */
 public class Library {
 
+    // Static reference of Singleton Library object
     private static Library library;
+
     private String libraryName;
     private String libraryDescription;
 
+    // Collection of unique songs in the Singleton Library
     public final Set<Song> mySongs = new HashSet<>();
+
+    // Collection of unique Podcasts in the Singleton Library
     public final Set<Podcast> myPodcasts = new HashSet<>();
 
+    // Collection of unique episodes in the Singleton Library
+    public final Set<Episode> myEpisodes = new HashSet<>();
+
+    /**
+     * Private constructor that is only called from getInstance() method.
+     */
     private Library() {
         this.libraryName = "Unnamed Library";
         this.libraryDescription = "No description.";
     }
 
+    /**
+     * Returns the instance of the Singleton Library. If instance DNE, creates the
+     * Singleton Library.
+     * 
+     * @return Singleton Library object
+     */
     public static Library getInstance() {
         if (null == library) {
             library = new Library();
@@ -35,11 +52,12 @@ public class Library {
     }
 
     /**
-     * Sets the name of the library.
+     * Sets the name of the Library.
      *
      * @param libraryName the library name
      * 
      * @pre libraryName != null;
+     * @throws IllegalArgumentException
      */
     public void setLibraryName(String libraryName) {
         assert libraryName != null;
@@ -47,11 +65,12 @@ public class Library {
     }
 
     /**
-     * Sets the description of the library.
+     * Sets the description of the Library.
      *
      * @param libraryDescription the library description
      * 
      * @pre libraryDescription != null;
+     * @throws IllegalArgumentException
      */
     public void setLibraryDescription(String libraryDescription) {
 
@@ -60,20 +79,34 @@ public class Library {
     }
 
     /**
-     * Adds your design of fields for Library
-     *
-     * 
-     * 
-     * /**
      * Adds a Song to the library. Duplicate Songs aren't added twice.
      *
      * @param pSong the Song to add
+     * 
+     * @pre pSong != null;
+     * @throws IllegalArgumentException
      */
     public void addSong(Song pSong) {
         assert pSong != null;
 
-        if (!mySongs.contains(pSong)){
+        if (!mySongs.contains(pSong)) {
             mySongs.add(pSong);
+        }
+    }
+
+    /**
+     * Adds a Episode to the library. Duplicate Episodes aren't added twice.
+     *
+     * @param pEpisode the Episode to add
+     * 
+     * @pre pEpisode != null;
+     * @throws IllegalArgumentException
+     */
+    public void addEpisode(Episode pEpisode) {
+        assert pEpisode != null;
+
+        if (!myEpisodes.contains(pEpisode)) {
+            myEpisodes.add(pEpisode);
         }
     }
 
@@ -84,9 +117,20 @@ public class Library {
      * @param pList the PlayList to add
      * 
      * @pre pList!=null;
+     * @throws IllegalArgumentException
      */
     public void addPlayList(PlayList pList) {
-        // Please add you implementation here
+
+        assert pList != null;
+
+        for (Playable currentPlayable : pList.getaList()) {
+
+            if (currentPlayable.getClass() == Song.class) {
+                addSong((Song) currentPlayable);
+            } else if (currentPlayable.getClass() == Episode.class) {
+                addEpisode((Episode) currentPlayable);
+            }
+        }
     }
 
     /**
@@ -96,14 +140,17 @@ public class Library {
      * @param pPodcast the Podcast to add
      * 
      * @pre pPodcast!=null;
+     * @throws IllegalArgumentException
      */
     public void addPodcast(Podcast pPodcast) {
-        // Please add you implementation here
-
         assert pPodcast != null;
 
-        if (!myPodcasts.contains(pPodcast)){
+        if (!myPodcasts.contains(pPodcast)) {
             myPodcasts.add(pPodcast);
+
+            for (int i = 0; i < pPodcast.getNumEpisodes(); i++) {
+                addEpisode(pPodcast.getEpisode(i));
+            }
         }
     }
 
