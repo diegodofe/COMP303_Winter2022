@@ -2,7 +2,10 @@ import java.util.*;
 
 /**
  * Represents a single episode, with at least a title, and an episode number.
+ * 
+ * @author Diego Dorantes-Ferreira 260854063
  */
+
 public class Episode implements Playable {
 
     // Cache of current flyweight Episodes.

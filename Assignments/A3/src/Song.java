@@ -2,6 +2,8 @@ import java.util.*;
 
 /**
  * Represents a single Song, with at least a title, and an artist name.
+ * 
+ * @author Diego Dorantes-Ferreira 260854063
  */
 public class Song implements Playable {
 

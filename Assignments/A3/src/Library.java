@@ -3,7 +3,10 @@ import java.util.*;
 /**
  * Represents an Audio library, with individual Song titles, Podcasts and
  * playlists.
+ * 
+ * @author Diego Dorantes-Ferreira 260854063
  */
+
 public class Library {
 
     // Static reference of Singleton Library object
@@ -12,21 +15,24 @@ public class Library {
     private String libraryName;
     private String libraryDescription;
 
-    // Collection of unique songs in the Singleton Library
-    public final Set<Song> mySongs = new HashSet<>();
+    // Collection of unique Songs in the Singleton Library
+    private final Set<Song> mySongs = new HashSet<>();
 
     // Collection of unique Podcasts in the Singleton Library
-    public final Set<Podcast> myPodcasts = new HashSet<>();
+    private final Set<Podcast> myPodcasts = new HashSet<>();
 
-    // Collection of unique episodes in the Singleton Library
-    public final Set<Episode> myEpisodes = new HashSet<>();
+    // Collection of unique Episodes in the Singleton Library
+    private final Set<Episode> myEpisodes = new HashSet<>();
+
+    // Collection of unique Playlists in the Singleton Library
+    private final Set<PlayList> myPlayLists = new HashSet<>();
 
     /**
      * Private constructor that is only called from getInstance() method.
      */
     private Library() {
-        this.libraryName = "Unnamed Library";
-        this.libraryDescription = "No description.";
+        this.libraryName = "Unnamed Library"; // Default
+        this.libraryDescription = "No description."; // Default
     }
 
     /**
@@ -111,8 +117,9 @@ public class Library {
     }
 
     /**
-     * Adds a PlayList to the library. All Songs from the list are also added as
-     * individual Songs to the library.
+     * Adds a PlayList to the library. All Songs and Episodes from the list are also
+     * added as
+     * individual Songs and Episodes to the library.
      *
      * @param pList the PlayList to add
      * 
@@ -123,14 +130,21 @@ public class Library {
 
         assert pList != null;
 
-        for (Playable currentPlayable : pList.getaList()) {
+        if (!myPlayLists.contains(pList)) {
 
-            if (currentPlayable.getClass() == Song.class) {
-                addSong((Song) currentPlayable);
-            } else if (currentPlayable.getClass() == Episode.class) {
-                addEpisode((Episode) currentPlayable);
+            myPlayLists.add(pList);
+
+            // Add all individual Songs and Episodes
+            for (Playable currentPlayable : pList.getaList()) {
+
+                if (currentPlayable.getClass() == Song.class) {
+                    addSong((Song) currentPlayable);
+                } else if (currentPlayable.getClass() == Episode.class) {
+                    addEpisode((Episode) currentPlayable);
+                }
             }
         }
+
     }
 
     /**
@@ -154,4 +168,24 @@ public class Library {
         }
     }
 
+    /**
+     * Plays all song and episodes in the library
+     */
+    public void playEntireLibrary() {
+
+        if (!mySongs.isEmpty()) {
+            System.out.println("Playing All Songs:");
+            for (Song s : mySongs) {
+                s.play();
+            }
+        }
+
+        if (!myEpisodes.isEmpty()) {
+            System.out.println("\nPlaying All Episodes:");
+            for (Episode e : myEpisodes) {
+                e.play();
+            }
+        }
+
+    }
 }

@@ -3,6 +3,8 @@ import java.util.*;
 /**
  * Represents a single Podcast, with at least a name and a host. Each Podcast
  * aggregates episodes.
+ * 
+ * @author Diego Dorantes-Ferreira 260854063
  */
 public class Podcast {
 

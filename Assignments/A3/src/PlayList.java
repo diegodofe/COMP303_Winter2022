@@ -2,6 +2,8 @@ import java.util.*;
 
 /**
  * Represents a sequence of playables to play in FIFO order.
+ * 
+ * @author Diego Dorantes-Ferreira 260854063
  */
 public class PlayList implements Playable {
 
