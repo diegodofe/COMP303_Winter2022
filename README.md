@@ -21,7 +21,7 @@
 | Wed 10 - 11am | Xinran Xiong |
 | Wed 3:30 - 4:30pm | Béatrice Duval |
 | Thu 9 - 10am | Avinash Bhat |
-| Thu 3:30 - 4:30pm | Linhui Huang | 
+| Thu 3:30 - 4:30pm | Linhui(Malinda) Huang | 
 | Fri 9 - 10am | Jiahao Chen |
 | Fri 11am - 12pm | Zhen Hao (Anthony) Ong |
 
